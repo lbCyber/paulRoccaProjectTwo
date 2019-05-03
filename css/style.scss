@@ -1,0 +1,88 @@
+@import 'partials/normalize';
+
+// Font variables
+
+$dokdoFont: "font-family: 'Dokdo', cursive;";
+$latoFont: "font-family: 'Lato', sans-serif;";
+
+// Colour variables
+
+$iceBlue: "#fafff";
+$charcoal: "#262725";
+$marigold: "#ffc600";
+$mudGreen: "#555f02";
+$camoGreen: "#1e140e";
+
+/*  Base Styles */
+
+html {
+  font: 125% $latoFont;
+}
+
+body {
+  font-size: 1rem;
+  background-color: $camoGreen;
+  color: $iceBlue;
+}
+
+h1 {
+  font:115px $dodkoFont;
+  color: $marigold;
+}
+
+.b h1, .c h1 {
+  font: 105px $dodkoFont;
+  line-height: 69.6px; //nice
+  letter-spacing: 10.9px;
+}
+
+h2 {
+  font: 5rem $latoFont;
+}
+
+h3 {
+  font: 2.25rem $dodkoFont;
+  color: $marigold;
+  letter-spacing: 10.9px;
+  line-height:58px;
+}
+
+.wrapper {
+  max-width:1600px;
+  margin:0 auto;
+}
+
+
+/*
+
+Heading Header (Mindn'Soul)
+Dokdo, Regular, 115px
+
+Heading (Blog, Get in touch)
+Dokdo, Regular, 105px
+Line height: 69.6px, Letter spacing: 10.9px
+
+Heading (Group Programs, New..., Free..., Come dis...,)
+Dokdo, Regular, 45px
+Line height: 58px, Letter spacing: 4.9px
+
+Logo (Mindn'Soul)
+Dokdo, Regular, 41.5px
+Center
+
+Heading (Customized offers, community, blog...)
+Dokdo, Regular, 40px
+Line height: 58px, Letter spacing: 4.3px
+
+Navigation
+Lato, Bold, 20px
+Center, Line height: 29px, Letter spacing: 1px
+
+bullets
+Lato, Regular, 20px
+Line height: 32px, Letter spacing: 2px
+
+Form Placeholder
+Lato, Light, 20px
+Line height: 32px, Letter spacing: 2px
+*/
