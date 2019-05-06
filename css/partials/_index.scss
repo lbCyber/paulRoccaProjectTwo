@@ -1,0 +1,165 @@
+.i {
+  /*  INDEX - HEADER  */
+
+  header {
+    background-image: url("../assets/indexHeaderBG.jpg");
+    height: 775px;
+    margin-bottom: 160px;
+  }
+
+  .headerIntro {
+    display: flex;
+    margin-top: 160px;
+  }
+
+  .headerImage {
+    position: relative;
+  }
+
+  .headerText {
+    padding-top: 40px;
+    padding-left: 40px;
+  }
+
+  /*  INDEX - ABOUT */
+
+  .aboutContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .aboutTextContainer {
+    flex-basis: 65%;
+    padding-right: 50px;
+    h3 {
+      margin: 0;
+    }
+  }
+
+  .aboutImage {
+    width: 315px;
+    height: 315px;
+    box-shadow: -20px 20px 0 $mudGreen;
+  }
+
+  /*  INDEX - GALLERY */
+
+  .gallery {
+    background-color: $charcoal;
+  }
+
+  .galleryContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .galleryImage {
+    margin: 0 20px;
+    flex-basis: calc((100% / 3) - 40px);
+  }
+
+  /*  INDEX - ABOUT 2 */
+
+  .about2Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  .about2Box {
+    flex-basis: 50%;
+    flex-wrap: wrap;
+    display: flex;
+    padding-top: 50px;
+  }
+
+  .about2Icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: $mudGreen;
+    color: white;
+    font-size: 1.3rem;
+  }
+
+  .about2TextBox {
+    width: calc(100% - 50px);
+    padding: 0 20px;
+  }
+
+  /*  INDEX - INFO  */
+
+  .aboutInfoSection {
+    background-color: $charcoal;
+  }
+
+  .aboutInfoBoxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 120%;
+    justify-content: space-between;
+  }
+
+  .aboutInfoBox {
+    display: flex;
+    flex-basis: calc(50% - 100px);
+    justify-content: center;
+    position: relative;
+  }
+
+  .aboutInfoText {
+    flex-direction: column;
+  }
+
+  .aboutInfoPic img {
+    box-shadow: 30px 30px 0 -10px $marigold;
+    position: relative;
+  }
+
+  .aboutInfoBox1 img {
+    top: -50px;
+  }
+
+  .aboutInfoBox1,
+  .aboutInfoBox3 {
+    margin-right: 50px;
+  }
+
+  .aboutInfoBox2,
+  .aboutInfoBox3 p {
+    padding-right: 15%;
+  }
+
+  .aboutInfoBox2,
+  .aboutInfoBox4 {
+    margin-left: 50px;
+  }
+
+  .aboutInfoBox2 a {
+    align-self: flex-start;
+  }
+
+  .aboutInfoBox3 {
+    align-items: flex-end;
+    p {
+      padding-left: 20%;
+    }
+  }
+
+  .aboutInfoBox4 img {
+    bottom: -50px;
+  }
+
+  /*  INDEX - FREE TRIAL  */
+
+  .freeTrialsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
