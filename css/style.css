@@ -237,6 +237,10 @@ a:hover, a.activePage {
   color: #ffc600;
 }
 
+button {
+  border: none;
+}
+
 form input {
   font: 300 20px "Lato", sans-serif;
   line-height: 32px;
@@ -293,6 +297,11 @@ h4 {
   letter-spacing: 4.3px;
 }
 
+h5 {
+  font: 300 30px "Dokdo", cursive;
+  letter-spacing: 4.6px;
+}
+
 header {
   background-size: cover;
 }
@@ -302,12 +311,32 @@ img {
   display: block;
 }
 
+input,
+textarea {
+  background: transparent;
+}
+
+input[type="text"],
+input[type="email"] {
+  border: none;
+  border-bottom: 3px solid #ffc600;
+}
+
+textarea {
+  border: 3px solid #ffc600;
+  resize: none;
+}
+
 p {
   letter-spacing: 2px;
   line-height: 32px;
 }
 
 /*  ELEMENT STYLES  */
+button.readMore {
+  width: 100%;
+}
+
 .wrapper {
   max-width: 1600px;
   margin: 0 auto;
@@ -339,6 +368,60 @@ p {
 .readMore:hover {
   background-color: #ffc600;
   color: #262725;
+}
+
+.formField {
+  width: calc(50% - 34px);
+  height: 90px;
+  margin-bottom: 50px;
+  margin-left: 3px;
+  /* Scooch it a bit to match textarea's dimensions + border */
+  margin-right: 3px;
+  padding-left: 40px;
+}
+
+.formText {
+  width: 100%;
+  height: 300px;
+  padding: 40px;
+  margin-bottom: 50px;
+}
+
+.formField,
+.formText {
+  color: #fff;
+  font-weight: 400;
+}
+
+.formField::-webkit-input-placeholder,
+.formText::-webkit-input-placeholder {
+  color: #fff;
+  font-weight: 400;
+}
+
+.formField:-ms-input-placeholder,
+.formText:-ms-input-placeholder {
+  color: #fff;
+  font-weight: 400;
+}
+
+.formField::-ms-input-placeholder,
+.formText::-ms-input-placeholder {
+  color: #fff;
+  font-weight: 400;
+}
+
+.formField::placeholder,
+.formText::placeholder {
+  color: #fff;
+  font-weight: 400;
+}
+
+.visuallyHidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  opacity: 0;
 }
 
 /*  NAV */
@@ -650,8 +733,8 @@ footer p {
 }
 
 .b .blogBodyContainer {
-  -ms-flex-preferred-size: calc((100% / 1.5) - 100px);
-  flex-basis: calc((100% / 1.5) - 100px);
+  -ms-flex-preferred-size: calc(70% - 100px);
+  flex-basis: calc(70% - 100px);
   margin-right: 100px;
   position: relative;
 }
@@ -701,20 +784,124 @@ footer p {
   flex-direction: column;
 }
 
+.b .blogCommentHeader {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.b .blogCommentBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
 .b .blogCommentPic {
   width: 96px;
+  height: 100%;
+  margin-right: 45px;
+}
+
+.b .blogCommentDate,
+.b .blogCommentText {
+  width: calc(100% - 146px);
+}
+
+.b .blogCommentDate {
+  color: #ffc600;
+  font-weight: 600;
+  margin: 0;
+  line-height: 15px;
+}
+
+.b .blogCommentText {
+  margin-bottom: 0;
+}
+
+.b .commentForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.b .formField::-webkit-input-placeholder,
+.b .formText::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.b .formField:-ms-input-placeholder,
+.b .formText:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.b .formField::-ms-input-placeholder,
+.b .formText::-ms-input-placeholder {
+  opacity: 1;
+}
+
+.b .formField::placeholder,
+.b .formText::placeholder {
+  opacity: 1;
 }
 
 .b .blogAside {
-  -ms-flex-preferred-size: calc((100% / 3) - 100px);
-  flex-basis: calc((100% / 3) - 100px);
-  margin-left: 100px;
+  -ms-flex-preferred-size: calc(30% - 100px);
+  flex-basis: calc(30% - 100px);
+  margin: 300px 0 auto 100px;
+  padding-bottom: 10px;
+  background-color: #555f02;
+}
+
+.b .blogAsideText {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.b .blogAsideText h5:nth-of-type(2) {
+  margin-top: 40px;
+}
+
+.b .blogAsideImage {
+  position: relative;
+  width: calc(100% - 20px);
+}
+
+.b .blogAsideImage img {
+  position: relative;
+  top: -20px;
+  left: 20px;
+}
+
+.b .blogAsideList {
+  padding-left: 15px;
 }
 
 .b .blogAsideList li {
   font: 20px "Lato", sans-serif;
   line-height: 32px;
   letter-spacing: 2px;
+  list-style: none;
+}
+
+.b .blogAsideList li::before {
+  color: #ffc600;
+  content: "\2022";
+  margin-right: 10px;
 }
 
 .c {
@@ -725,4 +912,80 @@ footer p {
 
 .c header {
   background-image: url("../assets/contact-image-1.jpg");
+  height: 500px;
+}
+
+.c .contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  top: -200px;
+  padding: 40px 80px;
+  height: 700px;
+}
+
+.c .contactHeader {
+  position: relative;
+  top: -50px;
+  left: 100px;
+  font-weight: 400;
+}
+
+.c .contactFormContainer {
+  -ms-flex-preferred-size: calc(70% - 100px);
+  flex-basis: calc(70% - 100px);
+  margin-right: 100px;
+  position: relative;
+}
+
+.c .contactForm {
+  background-color: #262725;
+}
+
+.c .contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 50px 75px;
+  -webkit-box-shadow: 30px 30px 0 -10px #ffc600;
+  box-shadow: 30px 30px 0 -10px #ffc600;
+}
+
+.c .contactAside {
+  -ms-flex-preferred-size: calc(30% - 100px);
+  flex-basis: calc(30% - 100px);
+  margin: 300px 0 auto 100px;
+  padding-bottom: 10px;
+}
+
+.c .contactEmail {
+  margin: 30px 0;
+}
+
+.c .contactInfo p {
+  margin: 0;
+  padding: 0;
+}
+
+.c .socialButtons i {
+  font-size: 1.2rem;
+  margin-right: 25px;
+}
+
+.c .socialButtons a {
+  color: #ffc600;
+}
+
+.c .socialButtons a:hover {
+  color: #fafffe;
 }

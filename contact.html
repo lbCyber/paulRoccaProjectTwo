@@ -29,17 +29,22 @@
   <main>
     <div class="wrapper contactContainer">
       <div class="contactFormContainer">
-        <h1>Get in Touch</h1>
+        <h1 class="contactHeader">Get in Touch</h1>
         <form action="" class="contactForm">
-          <input type="text" name="name" id="name" class="contactFormName">
-          <input type="email" name="email" id="email" class="contactFormEmail">
-          <input type="text" name="message" id="message" class="contactFormMessage">
+          <input type="text" name="name" id="name" class="formField" placeholder="Name">
+          <input type="email" name="email" id="email" class="formField" placeholder="Email address">
+          <textarea name="message" id="message" class="formText" placeholder="Message"></textarea>
           <button class="readMore">Submit</button>
         </form>
       </div>
       <aside class="contactAside">
-        <div class="socialButtons"></div>
-        <a href="mailto:" class="contactEmail">info@email.com</a>
+        <div class="socialButtons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p class="contactEmail"><a href="mailto:">info@email.com</a></p>
         <div class="contactInfo">
           <p>123 -456 - 7890</p>
           <p>123 Queen Street West,</p>
@@ -50,6 +55,9 @@
       </aside>
     </div>
   </main>
+  <footer>
+    <p>Copyright &copy 2019 HackerYou</p>
+  </footer>
 </body>
 
 </html>

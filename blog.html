@@ -57,18 +57,26 @@
               <h4 class="blogCommentHeader">Comments:</h4>
               <div class="blogCommentBox">
                 <div class="blogCommentPic"><img src="./assets/comment-image.jpg" alt=""></div>
-                <div class="blogCommentDate">Tuesday October 9th, 2019 by Davin</div>
-                <div class="blogCommentText"></div>
+                <p class="blogCommentDate">Tuesday October 9th, 2019 by Davin</p>
+                <p class="blogCommentText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, accusamus
+                  aliquid architecto voluptatum vero eveniet libero quod fugit, necessitatibus laudantium possimus
+                  consequatur numquam! Distinctio hic, aliquid impedit itaque ratione sequi qui unde labore tempora
+                  vero.</p>
               </div>
               <div class="blogCommentBox">
                 <div class="blogCommentPic"><img src="./assets/comment-image2.jpg" alt=""></div>
-                <div class="blogCommentDate"></div>
-                <div class="blogCommentText"></div>
+                <p class="blogCommentDate">Wednesday October 10th, 2019 by Lisa</p>
+                <p class="blogCommentText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis odit quidem,
+                  placeat sint repellat sunt praesentium hic natus fugit vero, voluptatibus accusantium esse. Dolorem,
+                  libero dolorum. Magni doloribus recusandae perspiciatis corrupti iusto rerum! Eos, consequatur!</p>
               </div>
               <form action="" class="commentForm">
-                <input type="text" name="name" id="name" class="commentFormName">
-                <input type="email" name="email" id="email" class="commentFormEmail">
-                <input type="text" name="comment" id="comment" class="commentFormText">
+                <input type="text" name="name" id="name" class="formField" placeholder="Name">
+                <label for="name" class="visuallyHidden">Enter your name to comment</label>
+                <input type="email" name="email" id="email" class="formField" placeholder="Email Address">
+                <label for="email" class="visuallyHidden">Enter your email address to comment</label>
+                <textarea name="comment" id="comment" class="formText" placeholder="Comment"></textarea>
+                <label for="comment" class="visuallyHidden">Enter your comment</label>
                 <button class="readMore">Post Comment</button>
               </form>
             </div>
@@ -76,18 +84,20 @@
         </div>
         <aside class="blogAside">
           <div class="blogAsideImage">
-            <img src="" alt="">
+            <img src="./assets/sidebar-image.jpg" alt="">
           </div>
-          <h5>Our mission</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis perspiciatis at sapiente quod
-            molestiae quisquam.</p>
-          <h5>Recent Posts</h5>
-          <ul class="blogAsideList">
-            <li>Lorem ipsum dolor sit.</li>
-            <li>Lorem ipsum dolor sit.</li>
-            <li>Lorem ipsum dolor sit.</li>
-            <li>Lorem ipsum dolor sit.</li>
-          </ul>
+          <div class="blogAsideText">
+            <h5>Our mission</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis perspiciatis at sapiente quod
+              molestiae quisquam.</p>
+            <h5>Recent Posts</h5>
+            <ul class="blogAsideList">
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ul>
+          </div>
         </aside>
       </div>
     </section>

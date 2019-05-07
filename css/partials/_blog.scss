@@ -26,7 +26,7 @@
   }
 
   .blogBodyContainer {
-    flex-basis: calc((100% / 1.5) - 100px);
+    flex-basis: calc(70% - 100px);
     margin-right: 100px;
     position: relative;
   }
@@ -62,26 +62,101 @@
 
   .blogCommentContainer {
     padding: 50px 50px 50px 125px;
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    flex-direction:column;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .blogCommentHeader {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 50px;
+  }
+
+  .blogCommentBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .blogCommentPic {
-    width:96px;
+    width: 96px;
+    height: 100%;
+    margin-right: 45px;
+  }
+
+  .blogCommentDate,
+  .blogCommentText {
+    width: calc(100% - 146px);
+  }
+
+  .blogCommentDate {
+    color: $marigold;
+    font-weight: 600;
+    margin: 0;
+    line-height: 15px;
+  }
+
+  .blogCommentText {
+    margin-bottom: 0;
+  }
+
+  .commentForm {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .formField,
+  .formText {
+    &::placeholder {
+      opacity: 1;
+    }
   }
 
   /*  BLOG  - ASIDE */
 
   .blogAside {
-    flex-basis: calc((100% / 3) - 100px);
-    margin-left: 100px;
+    flex-basis: calc(30% - 100px);
+    margin: 300px 0 auto 100px;
+    padding-bottom: 10px;
+    background-color: $mudGreen;
+  }
+
+  .blogAsideText {
+    padding-left: 20px;
+    padding-right: 20px;
+    h5:nth-of-type(2) {
+      margin-top: 40px;
+    }
+  }
+
+  .blogAsideImage {
+    position: relative;
+    width: calc(100% - 20px);
+    img {
+      position: relative;
+      top: -20px;
+      left: 20px;
+    }
+  }
+
+  .blogAsideList {
+    padding-left: 15px;
   }
 
   .blogAsideList li {
     font: 20px $latoFont;
     line-height: 32px;
     letter-spacing: 2px;
+    list-style: none;
+    &::before {
+      color: $marigold;
+      content: "\2022";
+      margin-right: 10px;
+    }
   }
 }

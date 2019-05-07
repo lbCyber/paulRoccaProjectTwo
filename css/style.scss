@@ -34,6 +34,10 @@ a {
   }
 }
 
+button {
+  border: none;
+}
+
 form input {
   font: 300 20px $latoFont;
   line-height: 32px;
@@ -90,6 +94,11 @@ h4 {
   letter-spacing: 4.3px;
 }
 
+h5 {
+  font: 300 30px $dokdoFont;
+  letter-spacing: 4.6px;
+}
+
 header {
   background-size: cover;
 }
@@ -99,12 +108,32 @@ img {
   display: block;
 }
 
+input,
+textarea {
+  background: transparent;
+}
+
+input[type="text"],
+input[type="email"] {
+  border: none;
+  border-bottom: 3px solid $marigold;
+}
+
+textarea {
+  border: 3px solid $marigold;
+  resize: none;
+}
+
 p {
   letter-spacing: 2px;
   line-height: 32px;
 }
 
 /*  ELEMENT STYLES  */
+
+button.readMore {
+  width: 100%;
+}
 
 .wrapper {
   max-width: 1600px;
@@ -136,6 +165,39 @@ p {
     background-color: $marigold;
     color: $charcoal;
   }
+}
+
+.formField {
+  width: calc(50% - 34px);
+  height: 90px;
+  margin-bottom: 50px;
+  margin-left: 3px; /* Scooch it a bit to match textarea's dimensions + border */
+  margin-right: 3px;
+  padding-left: 40px;
+}
+
+.formText {
+  width: 100%;
+  height: 300px;
+  padding: 40px;
+  margin-bottom: 50px;
+}
+
+.formField,
+.formText {
+  color: #fff;
+  font-weight: 400;
+  &::placeholder {
+    color: #fff;
+    font-weight: 400;
+  }
+}
+
+.visuallyHidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  opacity: 0;
 }
 
 /*  NAV */
