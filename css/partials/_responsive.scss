@@ -10,11 +10,11 @@
   /*  HEADER STYLES */
 
   .headerText {
-    opacity:1;
+    opacity: 1;
   }
 
   .headerImage {
-    opacity:1;
+    opacity: 1;
   }
 
   /*  FOOTER STYLES */
@@ -24,10 +24,11 @@
   .i {
     /*  INDEX - HEADER  */
 
-    .headerImage {
-    }
-
     /*  INDEX - ABOUT */
+
+    .aboutTextContainer {
+      flex-basis: calc(65% - 80px);
+    }
 
     /*  INDEX - GALLERY */
 
@@ -81,7 +82,18 @@
 
     header {
       height: 100vh;
-      background-position: right;
+    }
+
+    nav {
+      flex-direction: column;
+    }
+
+    .navList {
+      padding-left: 0;
+      li {
+        margin-left: 0;
+        width: 105px;
+      }
     }
 
     .headerImage {
@@ -89,15 +101,94 @@
       opacity: 0.25;
       border-radius: 350px 0 800px;
       overflow: hidden;
-      width: 50%;
+      width: 500px;
+      top: unset;
+      align-self: center;
     }
     /*  INDEX - ABOUT */
+
+    .aboutContainer {
+      flex-direction: column;
+      position: relative;
+    }
+
+    .aboutTextContainer {
+      flex-basis: unset;
+      padding-right: 0;
+      z-index: 10;
+      width: 80%;
+      h3 {
+        width: 50%;
+      }
+      .readMore {
+        float: right;
+      }
+    }
+
+    .aboutImage {
+      position: absolute;
+      border-radius: 0 350px 0 800px;
+      overflow: hidden;
+      right: 8%;
+      top: 0;
+      box-shadow: 20px -30px 0 -10px $mudGreen;
+      img {
+        opacity: 0.5;
+      }
+    }
 
     /*  INDEX - GALLERY */
 
     /*  INDEX - ABOUT2  */
 
+    .about2Container {
+      flex-direction: column;
+    }
+
+    .about2Box {
+      width: 95%;
+    }
+
+    .about2Box1,
+    .about2Box3 {
+      flex-direction: row;
+      text-align: left;
+      align-self: flex-start;
+    }
+
+    .about2Box2,
+    .about2Box4 {
+      flex-direction: row-reverse;
+      text-align: right;
+      align-self: flex-end;
+    }
+
     /*  INDEX - INFO  */
+
+    .aboutInfoBoxContainer {
+      flex-direction:column;
+    }
+
+    .aboutInfoBox1 img {
+      box-shadow:30px 30px 0 -10px $marigold;
+    }
+
+    .aboutInfoBox4 img {
+      box-shadow:-30px -30px 0 -10px $marigold;
+    }
+
+    .aboutInfoPic {
+      margin:0;
+      align-self:center;
+    }
+
+    .aboutInfoBox3 {
+      padding-top:40px;
+      p {
+        text-align:right;
+        padding-right:0;
+      }
+    }
 
     /*  INDEX - FREE TRIAL  */
   }
