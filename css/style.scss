@@ -213,7 +213,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-basis: 40%;
 }
 
 .navLink {
@@ -223,6 +222,7 @@ nav {
   letter-spacing: 1px;
   list-style: none;
   text-transform: uppercase;
+  margin-left: 70px;
 }
 
 .headerLogo {
@@ -248,3 +248,4 @@ footer {
 @import "partials/index";
 @import "partials/blog";
 @import "partials/contact";
+@import "partials/responsive";

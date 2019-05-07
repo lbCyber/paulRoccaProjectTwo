@@ -1,0 +1,226 @@
+@media only screen and (max-width: 1280px) {
+  /*  BASE STYLES */
+
+  /*  ELEMENT STYLES  */
+
+  .wrapper {
+    max-width: 1280px;
+  }
+
+  /*  HEADER STYLES */
+
+  .headerText {
+    opacity:1;
+  }
+
+  .headerImage {
+    opacity:1;
+  }
+
+  /*  FOOTER STYLES */
+
+  /*  INDEX */
+
+  .i {
+    /*  INDEX - HEADER  */
+
+    .headerImage {
+    }
+
+    /*  INDEX - ABOUT */
+
+    /*  INDEX - GALLERY */
+
+    /*  INDEX - ABOUT2  */
+
+    /*  INDEX - INFO  */
+
+    /*  INDEX - FREE TRIAL  */
+  }
+
+  /*  BLOG  */
+
+  .b {
+    /*  BLOG - HEADER */
+
+    /*  BLOG - BLOG SECTION */
+
+    /*  BLOG - COMMENTS */
+
+    /*  BLOG - ASIDE  */
+  }
+
+  /*  CONTACT */
+
+  .c {
+    /*  CONTACT - HEADER  */
+
+    /*  CONTACT - CONTACT FORM  */
+
+    /*  CONTACT - ASIDE */
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  /*  BASE STYLES */
+
+  /*  ELEMENT STYLES  */
+
+  .wrapper {
+    max-width: 1024px;
+  }
+
+  /*  HEADER STYLES */
+
+  /*  FOOTER STYLES */
+
+  /*  INDEX */
+
+  .i {
+    /*  INDEX - HEADER  */
+
+    header {
+      height: 100vh;
+      background-position: right;
+    }
+
+    .headerImage {
+      position: absolute;
+      opacity: 0.25;
+      border-radius: 350px 0 800px;
+      overflow: hidden;
+      width: 50%;
+    }
+    /*  INDEX - ABOUT */
+
+    /*  INDEX - GALLERY */
+
+    /*  INDEX - ABOUT2  */
+
+    /*  INDEX - INFO  */
+
+    /*  INDEX - FREE TRIAL  */
+  }
+
+  /*  BLOG  */
+
+  .b {
+    /*  BLOG - HEADER */
+
+    /*  BLOG - BLOG SECTION */
+
+    /*  BLOG - COMMENTS */
+
+    /*  BLOG - ASIDE  */
+  }
+
+  /*  CONTACT */
+
+  .c {
+    /*  CONTACT - HEADER  */
+
+    /*  CONTACT - CONTACT FORM  */
+
+    /*  CONTACT - ASIDE */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /*  BASE STYLES */
+
+  /*  ELEMENT STYLES  */
+
+  .wrapper {
+    max-width: 768px;
+  }
+
+  /*  HEADER STYLES */
+
+  /*  FOOTER STYLES */
+
+  /*  INDEX */
+
+  .i {
+    /*  INDEX - ABOUT */
+
+    /*  INDEX - GALLERY */
+
+    /*  INDEX - ABOUT2  */
+
+    /*  INDEX - INFO  */
+
+    /*  INDEX - FREE TRIAL  */
+  }
+
+  /*  BLOG  */
+
+  .b {
+    /*  BLOG - HEADER */
+
+    /*  BLOG - BLOG SECTION */
+
+    /*  BLOG - COMMENTS */
+
+    /*  BLOG - ASIDE  */
+  }
+
+  /*  CONTACT */
+
+  .c {
+    /*  CONTACT - HEADER  */
+
+    /*  CONTACT - CONTACT FORM  */
+
+    /*  CONTACT - ASIDE */
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  /*  BASE STYLES */
+
+  /*  ELEMENT STYLES  */
+
+  .wrapper {
+    max-width: 420px;
+  }
+
+  /*  HEADER STYLES */
+
+  /*  FOOTER STYLES */
+
+  /*  INDEX */
+
+  .i {
+    /*  INDEX - ABOUT */
+
+    /*  INDEX - GALLERY */
+
+    /*  INDEX - ABOUT2  */
+
+    /*  INDEX - INFO  */
+
+    /*  INDEX - FREE TRIAL  */
+  }
+
+  /*  BLOG  */
+
+  .b {
+    /*  BLOG - HEADER */
+
+    /*  BLOG - BLOG SECTION */
+
+    /*  BLOG - COMMENTS */
+
+    /*  BLOG - ASIDE  */
+  }
+
+  /*  CONTACT */
+
+  .c {
+    /*  CONTACT - HEADER  */
+
+    /*  CONTACT - CONTACT FORM  */
+
+    /*  CONTACT - ASIDE */
+  }
+}
