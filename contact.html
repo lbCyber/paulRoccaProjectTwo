@@ -31,27 +31,40 @@
   <main>
     <div class="wrapper contactContainer">
       <div class="contactFormContainer">
-        <h1>Get in Touch</h1>
+        <h1 class="contactHeader">Get in Touch</h1>
         <form action="" class="contactForm">
-          <input type="text" name="name" id="name" class="formField">
-          <input type="email" name="email" id="email" class="formField">
-          <textarea name="message" id="message" class="formText"></textarea>
+          <input type="text" name="name" id="name" class="formField" placeholder="Name" required>
+          <label for="name" class="visuallyHidden">Please enter your name</label>
+          <input type="email" name="email" id="email" class="formField" placeholder="Email address" required>
+          <label for="email" class="visuallyHidden">Please enter your email</label>
+          <textarea name="message" id="message" class="formText" placeholder="Message" required></textarea>
+          <label for="name" class="visuallyHidden">Enter your message here</label>
           <button class="readMore">Submit</button>
         </form>
       </div>
       <aside class="contactAside">
-        <div class="socialButtons"></div>
-        <p><a href="mailto:" class="contactEmail">info@email.com</a></p>
-        <div class="contactInfo">
-          <p>123 -456 - 7890</p>
-          <p>123 Queen Street West,</p>
-          <p>Unit 10</p>
-          <p>Toronto,Ontario</p>
-          <p>M5V2D5</p>
+        <div class="internetContacts">
+          <div class="socialButtons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <p><a href="mailto:" class="contactEmail">info@email.com</a></p>
         </div>
+        <ul class="contactInfo">
+          <li>123 -456 - 7890</li>
+          <li>123 Queen Street West,</li>
+          <li>Unit 10</li>
+          <li>Toronto,Ontario</li>
+          <li>M5V2D5</li>
+        </ul>
       </aside>
     </div>
   </main>
+  <footer>
+    <p>Copyright &copy 2019 HackerYou</p>
+  </footer>
 </body>
 
 </html>

@@ -124,7 +124,7 @@ textarea {
   resize: none;
 }
 
-p {
+p, li {
   letter-spacing: 2px;
   line-height: 32px;
 }
@@ -213,6 +213,8 @@ nav {
   padding: 0 10%;
   justify-content: space-between;
   height: 100px;
+  position:relative;
+  z-index:999;
 }
 
 .navButtonCheckBox {

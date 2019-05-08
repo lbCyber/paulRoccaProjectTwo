@@ -327,7 +327,7 @@ textarea {
   resize: none;
 }
 
-p {
+p, li {
   letter-spacing: 2px;
   line-height: 32px;
 }
@@ -445,6 +445,8 @@ nav {
   -ms-flex-pack: justify;
   justify-content: space-between;
   height: 100px;
+  position: relative;
+  z-index: 999;
 }
 
 .navButtonCheckBox {
@@ -974,6 +976,9 @@ footer p {
 .c header {
   background-image: url("../assets/contact-image-1.jpg");
   height: 500px;
+  position: absolute;
+  width: 100vw;
+  background-position: right;
 }
 
 .c .contactContainer {
@@ -985,16 +990,14 @@ footer p {
   -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
-  top: -200px;
-  padding: 40px 80px;
-  height: 700px;
+  padding: 250px 80px 80px;
 }
 
 .c .contactHeader {
-  position: relative;
-  top: -50px;
-  left: 100px;
+  margin-bottom: 50px;
+  margin-left: 100px;
   font-weight: 400;
+  width: 100%;
 }
 
 .c .contactFormContainer {
@@ -1023,9 +1026,9 @@ footer p {
 }
 
 .c .contactAside {
-  -ms-flex-preferred-size: calc(30% - 100px);
-  flex-basis: calc(30% - 100px);
-  margin: 300px 0 auto 100px;
+  -ms-flex-preferred-size: calc(30% - 50px);
+  flex-basis: calc(30% - 50px);
+  margin: 300px 0 auto 50px;
   padding-bottom: 10px;
 }
 
@@ -1033,9 +1036,14 @@ footer p {
   margin: 30px 0;
 }
 
-.c .contactInfo p {
-  margin: 0;
+.c .contactInfo {
+  padding-left: 0;
+}
+
+.c .contactInfo li {
+  margin: .4rem 0;
   padding: 0;
+  list-style: none;
 }
 
 .c .socialButtons i {
@@ -1092,6 +1100,33 @@ footer p {
     /*  CONTACT - HEADER  */
     /*  CONTACT - CONTACT FORM  */
     /*  CONTACT - ASIDE */
+  }
+  .c .contactHeader {
+    width: calc(100% - 100px);
+  }
+  .c .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  .c .contactAside {
+    margin: 80px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 80%;
+    margin: 80px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .c .contactInfo li {
+    text-align: right;
   }
 }
 
@@ -1307,6 +1342,22 @@ footer p {
     /*  CONTACT - CONTACT FORM  */
     /*  CONTACT - ASIDE */
   }
+  .c .contactHeader {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .c .contactContainer {
+    padding-left: 0;
+  }
+  .c .contactFormContainer {
+    margin: 0 40px 0 20px;
+  }
+  .c .contactAside {
+    width: calc(100% - 160px);
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1336,6 +1387,19 @@ footer p {
   }
   .readMore {
     width: 100%;
+  }
+  .formField,
+  .formText {
+    font-size: 0.9em;
+  }
+  .formField {
+    height: 60px;
+    width: calc(100% - 6px);
+    padding: 0 20px;
+  }
+  .formText {
+    width: 100%;
+    padding: 20px;
   }
   /*  HEADER STYLES */
   header,
@@ -1499,19 +1563,6 @@ footer p {
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .b .formField,
-  .b .formText {
-    font-size: 0.9em;
-  }
-  .b .formField {
-    height: 60px;
-    width: calc(100% - 6px);
-    padding: 0 20px;
-  }
-  .b .formText {
-    width: 100%;
-    padding: 20px;
-  }
   .b .blogAside {
     max-width: 600px;
     margin: 20px;
@@ -1557,6 +1608,41 @@ footer p {
     /*  CONTACT - HEADER  */
     /*  CONTACT - CONTACT FORM  */
     /*  CONTACT - ASIDE */
+  }
+  .c .contactHeader {
+    font-size: 4rem;
+    line-height: 60px;
+  }
+  .c .contactContainer {
+    padding-bottom: 40px;
+  }
+  .c .contactFormContainer {
+    width: 100%;
+    margin: 0;
+  }
+  .c .contactForm {
+    padding: 40px 20px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin: 0;
+  }
+  .c .contactAside {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: calc(100% - 40px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .c .internetContacts {
+    text-align: center;
+  }
+  .c .socialButtons {
+    padding-left: 20px;
+  }
+  .c .contactInfo li {
+    text-align: center;
   }
 }
 
@@ -1640,13 +1726,8 @@ footer p {
     margin-left: 0;
     text-align: center;
   }
-  .b .blogAsideText p, .b .blogAside li {
-    font-size: .8em;
-  }
-  /*  CONTACT */
-  .c {
-    /*  CONTACT - HEADER  */
-    /*  CONTACT - CONTACT FORM  */
-    /*  CONTACT - ASIDE */
+  .b .blogAsideText p,
+  .b .blogAside li {
+    font-size: 0.8em;
   }
 }
