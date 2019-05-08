@@ -12,24 +12,25 @@
   <title>Project 2 - Paul Rocca - Contact</title>
 </head>
 
-<body class="c">
+<body class="c">  <!--Contact body class-->
   <header>
+    <a href="#contact" class="skipBox">Skip to contact form.</a>
     <div class="wrapper">
       <nav>
         <h3 class="headerLogo"><a href="#">Mindn'Soul</a></h3>
-        <label for="navButton" class="navButtonBars"><i class="fas fa-bars"></i></label>
-        <input type="checkbox" name="navButton" class="navButtonCheckBox">
+        <input type="checkbox" class="navButtonCheckBox" id="navButtonCheckBox">
+        <label for="navButtonCheckBox" class="navButtonBars" id="navButtonBars"><i class="fas fa-bars" aria-hidden></i></label>
         <ul class="navList">
           <li class="navLink"><a href="./index.html">home</a></li>
           <li class="navLink"><a href="./index.html#about">about</a></li>
           <li class="navLink"><a href="./blog.html">blog</a></li>
-          <li class="navLink"><a href="#" class="activePage">contact</a></li>
+          <li class="navLink"><a href="./contact.html" class="activePage">contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
-    <div class="wrapper contactContainer">
+    <div class="wrapper contactContainer" id="contact">
       <div class="contactFormContainer">
         <h1 class="contactHeader">Get in Touch</h1>
         <form action="" class="contactForm">
@@ -45,19 +46,45 @@
       <aside class="contactAside">
         <div class="internetContacts">
           <div class="socialButtons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#">
+              <i class="fab fa-facebook-f" aria-hidden>
+                <p class="visuallyHidden">Like us on Facebook</p>
+              </i></a>
+            <a href="#">
+              <i class="fab fa-instagram" aria-hidden>
+                <p class="visuallyHidden">Follow us on Instagram</p>
+              </i></a>
+            <a href="#">
+              <i class="fab fa-twitter" aria-hidden>
+                <p class="visuallyHidden">Follow us on Twitter</p>
+              </i></a>
+            <a href="#">
+              <i class="fab fa-whatsapp" aria-hidden>
+                <p class="visuallyHidden">Follow us on Whats App</p>
+              </i></a>
           </div>
+          <p class="visuallyHidden">Email us at:</p>
           <p><a href="mailto:" class="contactEmail">info@email.com</a></p>
         </div>
         <ul class="contactInfo">
-          <li>123 -456 - 7890</li>
-          <li>123 Queen Street West,</li>
-          <li>Unit 10</li>
-          <li>Toronto,Ontario</li>
-          <li>M5V2D5</li>
+          <li>
+            <p class="visuallyHidden">Phone number:</p>
+            <p>123 -456 - 7890</p>
+          </li>
+          <li>
+            <p class="visuallyHidden">Mailing Address:</p>
+            <p>123 Queen Street West,</p>
+          </li>
+          <li>
+            <p>Unit 10</p>
+          </li>
+          <li>
+            <p>Toronto,Ontario</p>
+          </li>
+          <li>
+            <p class="visuallyHidden">Postal code:</p>
+            <p>M5V2D5</p>
+          </li>
         </ul>
       </aside>
     </div>

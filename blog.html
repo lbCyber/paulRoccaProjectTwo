@@ -12,67 +12,60 @@
   <title>Project 2 - Paul Rocca - Blog</title>
 </head>
 
-<body class="b">
+<body class="b">  <!--Blog body class-->
   <header>
+    <a href="#blog" class="skipBox">Skip to main content.</a>
+    <a href="#comment" class="skipBox">Skip to comment form.</a>
+    <a href="./contact.html" class="skipBox">Skip to contact form.</a>
     <div class="wrapper">
       <nav>
         <h3 class="headerLogo"><a href="#">Mindn'Soul</a></h3>
-        <label for="navButton" class="navButtonBars"><i class="fas fa-bars"></i></label>
-        <input type="checkbox" name="navButton" class="navButtonCheckBox">
+        <input type="checkbox" class="navButtonCheckBox" id="navButtonCheckBox">
+        <label for="navButtonCheckBox" class="navButtonBars" id="navButtonBars"><i class="fas fa-bars" aria-hidden></i></label>
         <ul class="navList">
           <li class="navLink"><a href="./index.html">home</a></li>
           <li class="navLink"><a href="./index.html#about">about</a></li>
-          <li class="navLink"><a href="#" class="activePage">blog</a></li>
+          <li class="navLink"><a href="./blog.html" class="activePage">blog</a></li>
           <li class="navLink"><a href="./contact.html">contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
-    <section class="blogSection">
+    <section class="blogSection" id="blog">
       <div class="wrapper blogSectionContainer">
         <div class="blogBodyContainer">
           <h1 class="blogHeader">Blog</h1>
           <div class="blogPostContainer">
-            <div class="blogPicTop"><img src="./assets/post-image.jpg" alt=""></div>
+            <div class="blogPicTop">
+              <img src="./assets/post-image.jpg" alt=""> <!--Not considered content-->
+            </div>
             <div class="blogContent">
               <h3 class="blogPostHeader">Come and discover our space</h3>
               <p class="blogPostDate">Monday May 5th, 2019 by <a href="#" class="blogPostAuthor">Saron</a></p>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem voluptatibus assumenda numquam error
-                dolor,
-                repellendus eos magni reiciendis adipisci non quisquam unde quasi. Labore ullam culpa delectus dicta
-                beatae architecto dolorum laboriosam officiis, sint modi.</p>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, itaque? Autem optio magnam
-                inventore, hic, tempore qui officia esse neque maiores aut aliquid porro adipisci voluptatum asperiores
-                natus commodi accusamus vel laudantium fugit ea atque? Corrupti tempora cumque eligendi voluptatem
-                consectetur vitae quos rerum debitis.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ullam deleniti minus, soluta maiores
-                corporis dolor, illum repudiandae tempora reiciendis distinctio similique, explicabo ipsum earum
-                accusantium? Nisi doloremque voluptatem, earum, consectetur ullam libero accusantium iure, reiciendis
-                quaerat necessitatibus nemo totam impedit recusandae accusamus. Ullam sed distinctio maiores cupiditate
-                repellat asperiores alias amet deserunt doloremque qui voluptas illum laborum corporis unde obcaecati
-                nihil quod vitae natus, beatae cumque aliquam reiciendis porro ea totam! Maxime, id deserunt.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores repellat aspernatur nobis? Eos,
-                dignissimos facere omnis iusto odit ipsum ratione voluptatem est repudiandae assumenda.</p>
+              <p>Lorem ipsum dolor sit, amet consecteur adipisicing elit. Rem voluptatibus assumenda numquam error dolor, repellendus eos magni reiciendis adipisci non quisquam unde quasi. Labore ullam culpa delectus dicta beatae architecto dolorum laboriosam officiis, sint modi.</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, itaque? Autem optio magnam inventore, hic, tempore qui officia esse neque maiores aut aliquid porro adipisci voluptatum asperiores natus commodi accusamus vel laudantium fugit ea atque? Corrupti tempora cumque eligendi voluptatem consectetur vitae quos rerum debitis.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ullam deleniti minus, soluta maiores corporis dolor, illum repudiandae tempora reiciendis distinctio similique, explicabo ipsum earum accusantium? Nisi doloremque voluptatem, earum, consectetur ullam libero accusantium iure, reiciendis quaerat necessitatibus nemo totam impedit recusandae accusamus. Ullam sed distinctio maiores cupiditate repellat asperiores alias amet deserunt doloremque qui voluptas illum laborum corporis unde obcaecati nihil quod vitae natus, beatae cumque aliquam reiciendis porro ea totam! Maxime, id deserunt.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores repellat aspernatur nobis? Eos, dignissimos facere omnis iusto odit ipsum ratione voluptatem est repudiandae assumenda.</p>
             </div>
             <div class="blogCommentContainer">
               <h4 class="blogCommentHeader">Comments:</h4>
               <div class="blogCommentBox">
-                <div class="blogCommentPic"><img src="./assets/comment-image.jpg" alt=""></div>
+                <div class="blogCommentPic">
+                  <img src="./assets/comment-image.jpg" alt=""> <!--Not considered content-->
+                </div>
                 <p class="blogCommentDate">Tuesday October 9th, 2019 by Davin</p>
-                <p class="blogCommentText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, accusamus
-                  aliquid architecto voluptatum vero eveniet libero quod fugit, necessitatibus laudantium possimus
-                  consequatur numquam! Distinctio hic, aliquid impedit itaque ratione sequi qui unde labore tempora
+                <p class="blogCommentText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, accusamus aliquid architecto voluptatum vero eveniet libero quod fugit, necessitatibus laudantium possimus consequatur numquam! Distinctio hic, aliquid impedit itaque ratione sequi qui unde labore tempora
                   vero.</p>
               </div>
               <div class="blogCommentBox">
-                <div class="blogCommentPic"><img src="./assets/comment-image2.jpg" alt=""></div>
+                <div class="blogCommentPic">
+                  <img src="./assets/comment-image2.jpg" alt=""> <!--Not considered content-->
+                </div>
                 <p class="blogCommentDate">Wednesday October 10th, 2019 by Lisa</p>
-                <p class="blogCommentText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis odit quidem,
-                  placeat sint repellat sunt praesentium hic natus fugit vero, voluptatibus accusantium esse. Dolorem,
-                  libero dolorum. Magni doloribus recusandae perspiciatis corrupti iusto rerum! Eos, consequatur!</p>
+                <p class="blogCommentText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis odit quidem, placeat sint repellat sunt praesentium hic natus fugit vero, voluptatibus accusantium esse. Dolorem, libero dolorum. Magni doloribus recusandae perspiciatis corrupti iusto rerum! Eos, consequatur!</p>
               </div>
-              <form action="" class="commentForm">
+              <form action="" class="commentForm" id="comment">
                 <input type="text" name="name" id="name" class="formField" placeholder="Name" required>
                 <label for="name" class="visuallyHidden">Enter your name to comment</label>
                 <input type="email" name="email" id="email" class="formField" placeholder="Email Address" required>
@@ -86,12 +79,11 @@
         </div>
         <aside class="blogAside">
           <div class="blogAsideImage">
-            <img src="./assets/sidebar-image.jpg" alt="">
+            <img src="./assets/sidebar-image.jpg" alt=""> <!--Not considered content-->
           </div>
           <div class="blogAsideText">
             <h5>Our mission</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis perspiciatis at sapiente quod
-              molestiae quisquam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis perspiciatis at sapiente quod molestiae quisquam.</p>
           </div>
           <div class="blogAsideRecent">
             <h5>Recent Posts</h5>

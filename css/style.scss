@@ -124,7 +124,8 @@ textarea {
   resize: none;
 }
 
-p, li {
+p,
+li {
   letter-spacing: 2px;
   line-height: 32px;
 }
@@ -167,7 +168,8 @@ button.readMore {
   }
 }
 
-.commentForm, .contactForm {
+.commentForm,
+.contactForm {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -206,6 +208,26 @@ button.readMore {
   opacity: 0;
 }
 
+/*  Skip Box  */
+
+.skipBox {
+  background-color: $charcoal;
+  box-shadow: 20px 20px 0 -10px $marigold;
+  left: 37.5%;
+  position: absolute;
+  text-align: center;
+  top: -1000px;
+  width: 30%;
+  z-index: 999;
+  height: 100px;
+  padding-top: 1.5rem;
+  border: 3px solid $marigold;
+}
+
+.skipBox:focus {
+  top: 0px;
+}
+
 /*  NAV */
 
 nav {
@@ -213,8 +235,8 @@ nav {
   padding: 0 10%;
   justify-content: space-between;
   height: 100px;
-  position:relative;
-  z-index:999;
+  position: relative;
+  z-index: 998;
 }
 
 .navButtonCheckBox {

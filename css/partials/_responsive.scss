@@ -357,7 +357,8 @@
   /*  HEADER STYLES */
 
   header,
-  .i header {
+  .i header,
+  .c header {
     overflow: hidden;
     max-height: 100vh;
     height: 100vh;
@@ -389,9 +390,14 @@
     left: 150vw;
     height: calc(100vh - 100px);
     justify-content: space-around;
-    bottom: 0;
+    top: 100px;
     margin: 0;
     z-index: 999;
+    transition: left 0.5s;
+  }
+
+  input:checked ~ ul {
+    left: 0;
   }
 
   .navLink {
@@ -403,6 +409,16 @@
     align-items: center;
     border-top: 2px ridge rgba(255, 255, 255, 0.1);
     border-bottom: 2px ridge rgba(255, 255, 255, 0.1);
+    a {
+      width: 100%;
+      height: 100%;
+      padding: 0.75rem 0;
+    }
+    a:active,
+    a:focus {
+      background-color: $marigold;
+      color: $charcoal;
+    }
   }
 
   /*  INDEX */
@@ -413,17 +429,28 @@
     .headerIntro {
       background-color: rgba(0, 0, 0, 0.5);
       height: 100vh;
+      margin-top: 0;
     }
 
     .headerImage {
-      top: 150px;
-      width: 420px;
+      top: 20px;
+    }
+
+    .headerText {
+      margin-top: 180px;
+      padding-left: 40px;
     }
 
     /*  INDEX - ABOUT */
 
+    .aboutContainer {
+      padding-top: 0;
+    }
+
     .aboutTextContainer {
       width: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
       h3,
       p,
       a {
@@ -662,8 +689,13 @@
       display: none;
     }
 
+    .headerIntro {
+      padding-top: 80px;
+    }
+
     .headerText {
       padding: 0;
+      margin-top: 120px;
       width: 100%;
       text-align: center;
     }

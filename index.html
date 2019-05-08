@@ -12,17 +12,18 @@
   <title>Project 2 - Paul Rocca - Index</title>
 </head>
 
-<body class="i">
-  <!--Index body class-->
+<body class="i">  <!--Index body class-->
   <header>
+    <a href="#about" class="skipBox">Skip to main content.</a>
+    <a href="./contact.html" class="skipBox">Skip to contact form.</a>
     <div class="wrapper">
       <nav>
         <h3 class="headerLogo"><a href="#">Mindn'Soul</a></h3>
-        <label for="navButton" class="navButtonBars"><i class="fas fa-bars"></i></label>
-        <input type="checkbox" name="navButton" class="navButtonCheckBox">
+        <input type="checkbox" class="navButtonCheckBox" id="navButtonCheckBox">
+        <label for="navButtonCheckBox" class="navButtonBars" id="navButtonBars"><i class="fas fa-bars" aria-hidden></i></label>
         <ul class="navList">
-          <li class="navLink"><a href="#" class="activePage">home</a></li>
-          <li class="navLink"><a href="#about">about</a></li>
+          <li class="navLink"><a href="./index.html" class="activePage">home</a></li>
+          <li class="navLink"><a href=".index.html#about">about</a></li>
           <li class="navLink"><a href="./blog.html">blog</a></li>
           <li class="navLink"><a href="./contact.html">contact</a></li>
         </ul>
@@ -30,7 +31,7 @@
       <div class="headerIntro">
         <div class="headerImage">
           <div class="imageFilterBox"></div>
-          <img src="./assets/meditateHeaderImage.jpg" alt="">
+          <img src="./assets/meditateHeaderImage.jpg" alt=""> <!--Not considered content-->
         </div>
         <div class="headerText">
           <h2>welcome to</h2>
@@ -44,63 +45,55 @@
       <div class="wrapper aboutContainer sectionContainerPadding">
         <div class="aboutTextContainer">
           <h3>New adventure</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio porro provident eligendi sequi molestias!
-            In, eveniet consequatur magni repellat quam saepe! Doloribus quod nesciunt, veritatis amet dolor deserunt
-            natus consectetur provident quaerat quas sed, eos fuga quis ipsum. Quo aliquam sed nostrum voluptatibus
-            delectus iusto officiis, enim provident, veritatis in eum vel, magnam maiores iste laudantium!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio porro provident eligendi sequi molestias! In, eveniet consequatur magni repellat quam saepe! Doloribus quod nesciunt, veritatis amet dolor deserunt natus consectetur provident quaerat quas sed, eos fuga quis ipsum. Quo aliquam sed nostrum voluptatibus delectus iusto officiis, enim provident, veritatis in eum vel, magnam maiores iste laudantium!</p>
           <a href="#" class="readMore">find out more</a>
         </div>
         <div class="aboutImage">
-          <img src="../assets/small-box.jpg" alt="">
+          <img src="../assets/small-box.jpg" alt="Picture of a group of our yoga students doing exercises. Nothing funny about that.">
         </div>
       </div>
     </section>
     <section class="gallery">
       <div class="wrapper galleryContainer sectionContainerPadding">
         <figure class="galleryImage galleryImage1">
-          <img src="./assets/gallery-image1.jpg" alt="">
+          <img src="./assets/gallery-image1.jpg" alt="In the event of a cataclysmic reversal of the earth's gravitational force, you are advised to take the flying dragon pose.">
         </figure>
         <figure class="galleryImage galleryImage2">
-          <img src="./assets/gallery-image2.jpg" alt="">
+          <img src="./assets/gallery-image2.jpg" alt="The people in this picture aren't actually doing yoga, there's been a terrible accident someone please help them.">
         </figure>
         <figure class="galleryImage galleryImage3">
-          <img src="./assets/gallery-image3.jpg" alt="">
+          <img src="./assets/gallery-image3.jpg" alt="Restored picture of King Cnut's lesser-known cousin Karen, demonstrating that yoga cannot, in fact, hold back the tides.">
         </figure>
       </div>
     </section>
     <section class="about2Section">
       <div class="wrapper about2Container sectionContainerPadding">
         <figure class="about2Box about2Box1">
-          <div class="about2Icon"><i class="fas fa-home"></i></div>
+          <div class="about2Icon"><i class="fas fa-home" aria-hidden></i></div>
           <div class="about2TextBox">
             <h4>Customized offers</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quos voluptate sapiente, odit inventore
-              quibusdam vero quis molestias nobis accusamus
-              iste sed nostrum vel magni.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quos voluptate sapiente, odit inventore quibusdam vero quis molestias nobis accusamus iste sed nostrum vel magni.</p>
           </div>
         </figure>
         <figure class="about2Box about2Box2">
-          <div class="about2Icon"><i class="fas fa-users"></i></div>
+          <div class="about2Icon"><i class="fas fa-users" aria-hidden></i></div>
           <div class="about2TextBox">
             <h4>Community</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam a architecto aliquid
-              voluptas corrupti labore dolores amet, consectetur commodi minus deleniti ratione, ipsam eos ullam!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam a architecto aliquid voluptas corrupti labore dolores amet, consectetur commodi minus deleniti ratione, ipsam eos ullam!</p>
           </div>
         </figure>
         <figure class="about2Box about2Box3">
-          <div class="about2Icon"><i class="fas fa-file"></i></div>
+          <div class="about2Icon"><i class="fas fa-file" aria-hidden></i></div>
           <div class="about2TextBox">
             <h4>Blog</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In error vero amet, odit
-              rerum reiciendis aut voluptates debitis autem fugiat nisi consequatur.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In error vero amet, odit rerum reiciendis aut voluptates debitis autem fugiat nisi consequatur.</p>
           </div>
         </figure>
         <figure class="about2Box about2Box4">
-          <div class="about2Icon"><i class="fas fa-phone"></i></div>
+          <div class="about2Icon"><i class="fas fa-phone" aria-hidden></i></div>
           <div class="about2TextBox">
             <h4>Get in Touch</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore porro voluptatum
-              harum sed asperiores facere dolorum consectetur sunt enim? Architecto sequi nemo?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore porro voluptatum harum sed asperiores facere dolorum consectetur sunt enim? Architecto sequi nemo?</p>
           </div>
         </figure>
       </div>
@@ -108,35 +101,28 @@
     <section class="aboutInfoSection">
       <div class="wrapper aboutInfoBoxContainer">
         <div class="aboutInfoBox aboutInfoBox1 aboutInfoPic">
-            <img src="./assets/left-image.jpg" alt="">
+          <img src="./assets/left-image.jpg" alt="The people in this picture are smiling because they follow my Twitter and read one of my amazing and smart jokes because I'm handsome.">
         </div>
         <div class="aboutInfoBox aboutInfoBox2 aboutInfoText">
           <h3>Group programs</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione nobis ducimus possimus nam ad
-            necessitatibus obcaecati consectetur error nulla corrupti eius, totam, laudantium, ullam itaque!</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione nobis ducimus possimus nam ad necessitatibus obcaecati consectetur error nulla corrupti eius, totam, laudantium, ullam itaque!</p>
           <a href="#" class="readMore">Read More</a>
         </div>
         <div class="aboutInfoBox aboutInfoBox3 aboutInfoText">
           <h3>New locations</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia praesentium magnam beatae fugit ex sunt
-            perspiciatis tenetur quasi. Ullam magnam excepturi odit eveniet, accusantium alias.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia praesentium magnam beatae fugit ex sunt perspiciatis tenetur quasi. Ullam magnam excepturi odit eveniet, accusantium alias.</p>
           <a href="#" class="readMore">Read More</a>
         </div>
         <div class="aboutInfoBox aboutInfoBox4 aboutInfoPic">
-            <img src="./assets/right-image.jpg" alt="">
+          <img src="./assets/right-image.jpg" alt="Ophelia, Sir John Everett Millais, oil on canvas, 1851">
         </div>
       </div>
     </section>
     <section class="freeTrialsSection">
-      <img src="./assets/banner-image.jpg" alt="" class="freeTrialHeadImage">
+      <img src="./assets/banner-image.jpg" alt="Before beginning any beachside yoga session, it is important to partake in the ritual of the one-legged YMCA dance, as pictured here." class="freeTrialHeadImage">
       <div class="wrapper freeTrialsContainer sectionContainerPadding">
         <h3>Free trials</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veritatis dolor! Ratione id rem molestias non
-          totam similique. Assumenda nam atque maxime, ad non accusantium dicta molestias distinctio quisquam
-          repellendus tempora possimus vero commodi ipsa doloribus! Fuga a, exercitationem velit aliquam quo, nostrum ab
-          repellendus at praesentium quasi qui eum veniam, voluptatibus amet repudiandae omnis consequatur officiis quis
-          maxime? Consequatur, repellat est atque officia aliquam natus. Veritatis sint quas dolorum nemo, quaerat magni
-          totam ab corrupti nam cupiditate enim distinctio?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veritatis dolor! Ratione id rem molestias non totam similique. Assumenda nam atque maxime, ad non accusantium dicta molestias distinctio quisquam repellendus tempora possimus vero commodi ipsa doloribus! Fuga a, exercitationem velit aliquam quo, nostrum ab repellendus at praesentium quasi qui eum veniam, voluptatibus amet repudiandae omnis consequatur officiis quis maxime? Consequatur, repellat est atque officia aliquam natus. Veritatis sint quas dolorum nemo, quaerat magni totam ab corrupti nam cupiditate enim distinctio?</p>
         <a href="#" class="readMore">Find out More</a>
       </div>
     </section>

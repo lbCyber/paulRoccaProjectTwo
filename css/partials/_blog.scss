@@ -3,7 +3,6 @@
 
   header {
     background-image: url("../assets/blog-image-1.jpg");
-    height: 500px;
     position: absolute;
     width: 100vw;
     background-position: right;
@@ -34,9 +33,10 @@
   }
 
   .blogContent {
-    border-right: 8px solid #555f0e;
-    border-bottom: 8px solid #555f0e;
+    border-right: 8px solid $mudGreen;
+    border-bottom: 8px solid $mudGreen;
     padding: 50px 50px 50px 125px;
+    background-color: $camoGreen;
   }
 
   .blogPicTop {
