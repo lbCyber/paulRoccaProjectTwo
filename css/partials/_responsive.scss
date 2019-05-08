@@ -36,6 +36,16 @@
 
     /*  INDEX - INFO  */
 
+    .aboutInfoText {
+      padding: 40px;
+      margin: 0;
+      width: 100%;
+      text-align: left;
+      p {
+        padding: 0;
+      }
+    }
+
     /*  INDEX - FREE TRIAL  */
   }
 
@@ -71,7 +81,30 @@
     max-width: 1024px;
   }
 
+  .readMore {
+    width: 50%;
+    align-self: center;
+    text-align: center;
+  }
+
   /*  HEADER STYLES */
+
+  header {
+    height: 100vh;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .navList {
+    padding-left: 0;
+  }
+
+  .navLink {
+    margin-left: 0;
+    width: 105px;
+  }
 
   /*  FOOTER STYLES */
 
@@ -79,22 +112,6 @@
 
   .i {
     /*  INDEX - HEADER  */
-
-    header {
-      height: 100vh;
-    }
-
-    nav {
-      flex-direction: column;
-    }
-
-    .navList {
-      padding-left: 0;
-      li {
-        margin-left: 0;
-        width: 105px;
-      }
-    }
 
     .headerImage {
       position: absolute;
@@ -119,9 +136,6 @@
       width: 80%;
       h3 {
         width: 50%;
-      }
-      .readMore {
-        float: right;
       }
     }
 
@@ -166,28 +180,43 @@
     /*  INDEX - INFO  */
 
     .aboutInfoBoxContainer {
-      flex-direction:column;
+      flex-direction: column;
     }
 
     .aboutInfoBox1 img {
-      box-shadow:30px 30px 0 -10px $marigold;
+      box-shadow: 30px 30px 0 -10px $marigold;
     }
 
-    .aboutInfoBox4 img {
-      box-shadow:-30px -30px 0 -10px $marigold;
-    }
-
-    .aboutInfoPic {
-      margin:0;
-      align-self:center;
+    .aboutInfoBox2 {
+      h3,
+      .readMore {
+        align-self: center;
+      }
     }
 
     .aboutInfoBox3 {
-      padding-top:40px;
-      p {
-        text-align:right;
-        padding-right:0;
+      order: 1;
+      h3 {
+        align-self: center;
+        margin-top: 70px;
       }
+    }
+
+    .aboutInfoBox4 {
+      margin-top: 40px;
+      margin-bottom: 70px;
+      img {
+        box-shadow: -30px -30px 0 -10px $marigold;
+      }
+    }
+
+    .aboutInfoText2 h3 {
+      text-align: center;
+    }
+
+    .aboutInfoPic {
+      margin: 0;
+      align-self: center;
     }
 
     /*  INDEX - FREE TRIAL  */
@@ -219,28 +248,181 @@
 @media only screen and (max-width: 768px) {
   /*  BASE STYLES */
 
+  h1 {
+    font-size: 70px;
+  }
+
+  h3 {
+    font-size: 38px;
+    letter-spacing: 4.6px;
+    line-height: 48px;
+  }
+
+  h4 {
+    line-height: 30px;
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 28px;
+  }
+
   /*  ELEMENT STYLES  */
 
   .wrapper {
     max-width: 768px;
   }
 
+  .sectionContainerPadding {
+    padding: 40px;
+  }
+
+  .readMore {
+    width: 100%;
+  }
+
   /*  HEADER STYLES */
+
+  header, .i header {
+    overflow: hidden;
+    max-height: 100vh;
+    height: 100vh;
+  }
+
+  .navButtonBars {
+    display: block;
+    right: 40px;
+    top: 30px;
+    font-size: 2rem;
+    transform: scaleY(0.8);
+    cursor: pointer;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .headerLogo {
+    margin: auto;
+    padding-right: 40px;
+  }
+
+  .navList {
+    flex-direction: column;
+    position: absolute;
+    background-color: #262725;
+    width: 100vw;
+    left: 150vw;
+    height: calc(100vh - 100px);
+    justify-content: space-around;
+    bottom: 0;
+    margin: 0;
+    z-index: 999;
+  }
+
+  .navLink {
+    margin-left: 0;
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px ridge rgba(255, 255, 255, 0.1);
+    border-bottom: 2px ridge rgba(255, 255, 255, 0.1);
+  }
 
   /*  FOOTER STYLES */
 
   /*  INDEX */
 
   .i {
+    /*  INDEX - HEADER  */
+
+    .headerIntro {
+      margin-top: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 100vh;
+    }
+
+    .headerText {
+      margin-top: 40%;
+    }
+
+    .headerImage {
+      display: none;
+    }
+
     /*  INDEX - ABOUT */
+
+    .aboutTextContainer {
+      width: 100%;
+      h3,
+      p,
+      a {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .aboutImage {
+      opacity: 0.5;
+    }
 
     /*  INDEX - GALLERY */
 
+    .gallery {
+      padding: 34% 0;
+      position: relative;
+    }
+
+    .galleryImage {
+      width: 40%;
+      position: absolute;
+      flex-basis: unset;
+      margin: 0;
+    }
+
+    .galleryImage1 {
+      top: 8%;
+      left: 6%;
+    }
+
+    .galleryImage2 {
+      top: 20%;
+      left: 30%;
+    }
+
+    .galleryImage3 {
+      left: 54%;
+      top: 42%;
+    }
+
     /*  INDEX - ABOUT2  */
+
+    .about2Section .sectionContainerPadding {
+      padding: 20px;
+    }
+
+    .about2TextBox p {
+      text-align: center;
+    }
 
     /*  INDEX - INFO  */
 
+    .aboutInfoText {
+      text-align: center;
+    }
+
+    .aboutInfoBox1 img {
+      top: -20px;
+    }
+
     /*  INDEX - FREE TRIAL  */
+
+    .freeTrialsContainer {
+      text-align: center;
+    }
   }
 
   /*  BLOG  */
@@ -269,26 +451,95 @@
 @media only screen and (max-width: 420px) {
   /*  BASE STYLES */
 
+  h1 {
+    font-size: 62px;
+  }
+
+  h2 {
+    font-size: 35px;
+    line-height: 8px;
+  }
+
+  h3 {
+    line-height: 32px;
+  }
+
   /*  ELEMENT STYLES  */
 
   .wrapper {
     max-width: 420px;
+    min-width: 320px;
+  }
+
+  .sectionContainerPadding {
+    padding: 20px 10px;
   }
 
   /*  HEADER STYLES */
+
+  .headerLogo {
+    display: none;
+  }
 
   /*  FOOTER STYLES */
 
   /*  INDEX */
 
   .i {
+    /*  INDEX - HEADER  */
+
+    .headerText {
+      margin: 65% 0 0;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+    }
+
     /*  INDEX - ABOUT */
 
     /*  INDEX - GALLERY */
 
     /*  INDEX - ABOUT2  */
 
+    .about2Box {
+      position: relative;
+      width: 100%;
+    }
+
+    .about2Icon {
+      width: 100px;
+      height: 100px;
+      font-size: 60px;
+      position: absolute;
+      top: 30px;
+      left: calc(50% - 50px);
+      opacity: 0.2;
+    }
+
+    .about2TextBox {
+      text-align: center;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
     /*  INDEX - INFO  */
+
+    .aboutInfoPic {
+      width: 100%;
+      img {
+        box-shadow: none;
+        top: 0;
+      }
+    }
+
+    .aboutInfoBox3 h3 {
+      margin: 0;
+    }
+
+    .aboutInfoText {
+      padding: 40px 10px;
+    }
 
     /*  INDEX - FREE TRIAL  */
   }

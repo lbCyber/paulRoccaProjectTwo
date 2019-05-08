@@ -38,8 +38,13 @@
   .aboutTextContainer {
     flex-basis: 65%;
     padding-right: 50px;
+    display:flex;
+    flex-direction:column;
     h3 {
       margin: 0;
+    }
+    .readMore {
+      align-self:flex-start;
     }
   }
 
