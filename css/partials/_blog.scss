@@ -1,28 +1,30 @@
 .b {
-  position: relative;
-
   /*  BLOG  - HEADER  */
 
   header {
     background-image: url("../assets/blog-image-1.jpg");
     height: 500px;
+    position: absolute;
+    width: 100vw;
+    background-position: right;
   }
 
   /*  BLOG  - BLOG SECTION  */
 
   .blogHeader {
-    position: relative;
-    top: -50px;
-    left: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
     font-weight: 400;
+  }
+
+  .blogSection {
+    padding-top: 250px;
   }
 
   .blogSectionContainer {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    position: relative;
-    top: -200px;
   }
 
   .blogBodyContainer {
@@ -42,6 +44,11 @@
     position: relative;
     top: -19px;
     right: 20px;
+  }
+
+  .blogPostHeader {
+    line-height: 38px;
+    margin-bottom: 20px;
   }
 
   .blogPostDate {
@@ -86,6 +93,10 @@
     width: 96px;
     height: 100%;
     margin-right: 45px;
+    overflow: hidden;
+    img {
+      transform: scale(1.05);
+    }
   }
 
   .blogCommentDate,
@@ -97,17 +108,11 @@
     color: $marigold;
     font-weight: 600;
     margin: 0;
-    line-height: 15px;
+    line-height: 25px;
   }
 
   .blogCommentText {
     margin-bottom: 0;
-  }
-
-  .commentForm {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
   }
 
   .formField,
@@ -141,7 +146,12 @@
       position: relative;
       top: -20px;
       left: 20px;
+      max-width: 368px;
     }
+  }
+
+  .blogAsideRecent h5 {
+    padding-left: 20px;
   }
 
   .blogAsideList {

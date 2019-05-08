@@ -167,6 +167,12 @@ button.readMore {
   }
 }
 
+.commentForm, .contactForm {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .formField {
   width: calc(50% - 34px);
   height: 90px;
@@ -210,15 +216,15 @@ nav {
 }
 
 .navButtonCheckBox {
-  width:1px;
-  height:1px;
-  position:absolute;
-  opacity:0;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  opacity: 0;
 }
 
 .navButtonBars {
   display: none;
-  position:absolute;
+  position: absolute;
 }
 
 .navList {

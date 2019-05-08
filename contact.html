@@ -17,11 +17,13 @@
     <div class="wrapper">
       <nav>
         <h3 class="headerLogo"><a href="#">Mindn'Soul</a></h3>
+        <label for="navButton" class="navButtonBars"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" name="navButton" class="navButtonCheckBox">
         <ul class="navList">
           <li class="navLink"><a href="./index.html">home</a></li>
           <li class="navLink"><a href="./index.html#about">about</a></li>
           <li class="navLink"><a href="./blog.html">blog</a></li>
-          <li class="navLink"><a href="./contact.html" class="activePage">contact</a></li>
+          <li class="navLink"><a href="#" class="activePage">contact</a></li>
         </ul>
       </nav>
     </div>
@@ -29,22 +31,17 @@
   <main>
     <div class="wrapper contactContainer">
       <div class="contactFormContainer">
-        <h1 class="contactHeader">Get in Touch</h1>
+        <h1>Get in Touch</h1>
         <form action="" class="contactForm">
-          <input type="text" name="name" id="name" class="formField" placeholder="Name">
-          <input type="email" name="email" id="email" class="formField" placeholder="Email address">
-          <textarea name="message" id="message" class="formText" placeholder="Message"></textarea>
+          <input type="text" name="name" id="name" class="formField">
+          <input type="email" name="email" id="email" class="formField">
+          <textarea name="message" id="message" class="formText"></textarea>
           <button class="readMore">Submit</button>
         </form>
       </div>
       <aside class="contactAside">
-        <div class="socialButtons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-whatsapp"></i></a>
-        </div>
-        <p class="contactEmail"><a href="mailto:">info@email.com</a></p>
+        <div class="socialButtons"></div>
+        <p><a href="mailto:" class="contactEmail">info@email.com</a></p>
         <div class="contactInfo">
           <p>123 -456 - 7890</p>
           <p>123 Queen Street West,</p>
@@ -55,9 +52,6 @@
       </aside>
     </div>
   </main>
-  <footer>
-    <p>Copyright &copy 2019 HackerYou</p>
-  </footer>
 </body>
 
 </html>
